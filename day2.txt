@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+Answer 2:
+var: The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global.
+{
+  var a=10;
+  console.log(a);
+} //block 1
+{
+  a++;
+  console.log(a);
+}
+let: The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
+“let” and “const” are“block scoped”.
+var is “function scoped”.
+{
+ let a=10;
+ console.log(a);
+} //block 1
+{
+  a++;
+  console.log(a);
+}
+const: The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned.
+“const” cannot be re-assigned to a new value. However it CAN be mutated.
+{
+ const PI=3.14;
+ console.log(PI);
+} //block 1
+{
+  console.log(PI);
+} 
+
+
+Answer3:
+Data types basically specify what kind of data can be stored and manipulated within a program.
+
+There are six basic data types in JavaScript which can be divided into three main categories: primitive (or primary), composite (or reference), and special data types. String, Number, and Boolean are primitive data types. Object, Array, and Function (which are all types of objects) are composite data types. Whereas Undefined and Null are special data types.
+
+Primitive data types can hold only one value at a time, whereas composite data types can hold collections of values and more complex entities.
