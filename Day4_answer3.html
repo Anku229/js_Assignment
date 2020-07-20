@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+var shoplist = {
+    
+    init: function (title) {
+        this.title = title;
+    },
+    
+    describe: function () {
+        var description = this.title ;
+        return description;
+    }
+};
+
+var list1 = Object.create(shoplist);
+list1.init("juice");
+
+var list2 = Object.create(shoplist);
+list2.init("rice");
+
+var list3 = Object.create(shoplist);
+list3.init("flour");
+// ...
+
+var lists = [];
+lists.push(list1);
+lists.push(list2);
+lists.push(list3);
+
+lists.forEach(function (shoplist) {
+    console.log(shoplist.describe());
+});
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
